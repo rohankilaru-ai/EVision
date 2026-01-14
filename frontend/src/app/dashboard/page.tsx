@@ -143,7 +143,7 @@ export default function DashboardPage() {
           ) : (
             <>
               <div className="space-y-4">
-                {opportunitiesData?.opportunities.map((opp) => (
+                {opportunitiesData?.opportunities.map((opp: EVOpportunity) => (
                   <OpportunityCard key={opp.id} opportunity={opp} />
                 ))}
               </div>
